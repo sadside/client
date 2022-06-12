@@ -1,0 +1,43 @@
+.wrap-menu {
+	background-color: #20212c;
+	width: 100%;
+	
+	.list {
+		color: #fb76a3;
+	}
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.menu {
+	display: flex;
+	height: 80px;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 600px;
+	@media (min-width: 1000px) {
+		max-width: 56rem;
+	}
+	@media (min-width: 1400px) {
+		max-width: 80rem;
+	}
+	
+	h2 {
+		font-weight: 600;
+		font-size: 34px;
+		color: #fff;
+	}
+}
+
+.links {
+	color: #fff;
+	display: flex;
+	
+	.link {
+		margin-left: 25px;
+		font-weight: 500;
+	}
+}

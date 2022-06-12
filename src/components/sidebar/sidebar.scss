@@ -1,0 +1,39 @@
+.sidebar {
+	position: absolute;
+	left: 50px;
+	top: 200px;
+	width: 300px;
+	height: 700px;
+	background-color: #20212C;
+	padding: 20px 15px;
+	border-radius: 10px;
+	
+	h2 {
+		color: #fff;
+		font-size: 24px;
+	}
+	
+	.circle {
+		border-radius: 50%;
+		width: 25px;
+		height: 25px;
+		background-color: lime;
+		margin-right: 20px;
+		
+	}
+	
+	.text {
+		font-size: 18px;
+	}
+	
+	.wrap-category {
+		transition: 0.3s;
+		border-radius: 5px;
+		padding: 10px;
+		cursor: pointer;
+	}
+	
+	.wrap-category:hover {
+		background-color: #272838;
+	}
+}

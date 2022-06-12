@@ -1,0 +1,88 @@
+.blocks {
+	padding: 30px;
+	background-color: #20212c;
+	color: #fff;
+	display: flex;
+	
+	.userInfo {
+		width: 350px;
+		padding: 10px;
+		background-color: #303841;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 10px;
+		
+		h2 {
+			font-size: 20px;
+			margin: 10px 0;
+			text-align: center;
+		}
+		
+		button {
+			display: block;
+			text-align: center;
+			background-color: #fb76a3;
+			height: 50px;
+			font-size: 16px;
+			font-weight: 500;
+			border-radius: 10px;
+			margin: 20px 0;
+			padding: 0 20px;
+		}
+	}
+	
+	.user-base {
+		flex: 1 1;
+		margin-left: 50px;
+		
+		h1 {
+			text-align: center;
+			font-size: 32px;
+		}
+	}
+	
+	.edit-input {
+		display: block;
+		margin: 15px 0;
+		background-color: #17181f;
+		outline: none;
+		width: 300px;
+		
+		&:focus {
+			outline: 0;
+			outline-offset: 0
+		}
+		
+		caret-color: #fff;
+		padding: 15px;
+		border-radius: 10px;
+		color: #fff;
+		font-size: 22px;
+		
+		&::placeholder {
+			font-size: 18px;
+			font-weight: 500;
+			letter-spacing: 1px;
+		}
+		
+	}
+	
+	.save {
+		width: 300px;
+	}
+	
+	.btns {
+		display: flex;
+		width: 300px;
+		margin: 0 auto;
+		justify-content: space-between;
+		
+		.logout {
+			flex: 1;
+			margin-left: 10px;
+		}
+	}
+	
+}
+

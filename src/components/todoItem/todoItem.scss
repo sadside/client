@@ -1,0 +1,130 @@
+.todoItem {
+	margin: 20px 0;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	position: relative;
+	-webkit-user-select: none;
+	user-select: none;
+	align-items: center;
+	background-color: #20212c;
+	display: flex;
+	align-items: center;
+	padding: 10px 15px;
+	border-radius: 10px;
+	
+	.checkBoxOff {
+		border: 3px #fb76a3 solid;
+		height: 40px;
+		width: 40px;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+	
+	.checkBoxOn {
+		border: 3px #fb76a3 solid;
+		height: 40px;
+		width: 40px;
+		border-radius: 10px;
+		cursor: pointer;
+		background-color: #fb76a3;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.editModal {
+		background-color: #20212c;
+		margin-left: 20px;
+		color: #fff;
+		font-weight: 400;
+		font-size: 18px;
+		width: 350px;
+		text-decoration: underline;
+		outline: none;
+		padding: 10px;
+	}
+	
+	.saveChanges {
+		background-color: #fb76a3;
+		color: #17181f;
+		border-radius: 10px;
+	}
+	
+	.removeBtn {
+		color: #000;
+		background-color: #fff;
+		padding: 10px;
+		font-size: 14px;
+		border-radius: 5px;
+		margin-left: 30px;
+		
+		&.save {
+			background-color: #fb76a3;
+		}
+	}
+	
+	.editButtons {
+		position: absolute;
+		right: 50px;
+	}
+	
+	.todoShow-enter {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	
+	.todoShow-enter-active {
+		opacity: 1;
+		transform: translateX(0);
+		transition: opacity 300ms, transform 300ms;
+	}
+	
+	.todoShow-exit {
+		opacity: 1;
+	}
+	
+	.todoShow-exit-active {
+		opacity: 0;
+		transform: scale(0.9);
+		transition: opacity 300ms, transform 300ms;
+	}
+}
+
+.taskText {
+	color: #fff;
+	font-weight: 400;
+	font-size: 18px;
+	margin-left: 20px;
+}
+
+.cursor-pointer.w-96.taskText.done {
+	text-decoration: line-through;
+}
+
+@keyframes showTodo {
+	0% {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+
+//
+//.showAnimmation {
+//	animation: showTodo 0.3s forwards;
+//}
+
+.text-todo {
+	flex: 1;
+	padding: 10px;
+	border-radius: 5px;
+	transition: 0.3s;
+	width: 500px;
+}
+
+.text-todo:hover {
+	background-color: #2a2b33;
+}

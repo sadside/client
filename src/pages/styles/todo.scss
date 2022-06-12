@@ -1,0 +1,23 @@
+.App {
+	
+	.doneBlock {
+		margin-top: 40px;
+		background-color: #20212c;
+		border-radius: 10px;
+		
+		h2 {
+			font-size: 34px;
+			font-weight: 600;
+			color: #fff;
+		}
+	}
+	
+	.wrap-todo {
+		margin: 200px auto;
+		width: 600px;
+		@media (min-width: 1000px) {
+			width: 56rem;
+		}
+	}
+	
+}
