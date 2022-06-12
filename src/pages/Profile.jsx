@@ -22,7 +22,7 @@ const Profile = () => {
     if (localStorage.getItem("token") === null) {
       navigate("/login");
     } else {
-      fetch("http://localhost:8000/api/get-user-data/", {
+      fetch("http://193.168.48.199/api/get-user-data/", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Token ${localStorage.getItem("token")}`,
@@ -40,7 +40,7 @@ const Profile = () => {
   }, []);
 
   const logout = () => {
-    fetch("http://localhost:8000/api/auth/token/logout/", {
+    fetch("http://193.168.48.199/api/auth/token/logout/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

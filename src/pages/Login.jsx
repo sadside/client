@@ -37,7 +37,7 @@ const Login = () => {
   }, []);
 
   const handleSubmitForm = (data) => {
-    fetch("http://localhost:8000/api/auth/token/login/", {
+    fetch("http://193.168.48.199/api/auth/token/login/", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

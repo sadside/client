@@ -19,7 +19,7 @@ function Todo() {
     } else {
       console.log("ты авторизован");
 
-      getAllTodo("http://localhost:8000/api/todo/").then((data) => {
+      getAllTodo("http://193.168.48.199:8000/api/todo/").then((data) => {
         setTodoList([...data]);
       });
     }
@@ -45,7 +45,7 @@ function Todo() {
   async function removeTodo(id) {
     setLoading(true);
     console.log(id);
-    fetch(`http://localhost:8000/api/todo/${id}`, {
+    fetch(`http://193.168.48.199/api/todo/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -64,7 +64,7 @@ function Todo() {
   }
 
   function updateTodo(id, text, done) {
-    return fetch(`http://localhost:8000/api/todo/${id}`, {
+    return fetch(`http://193.168.48.199/api/todo/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -86,7 +86,7 @@ function Todo() {
   };
 
   const updateStatus = () => {
-    getAllTodo("http://localhost:8000/api/todo/").then((data) => {
+    getAllTodo("http://193.168.48.199/api/todo/").then((data) => {
       setTodoList([...data]);
     });
   };
@@ -126,7 +126,7 @@ function Todo() {
     setTodoList((prev) => [...prev, { text, is_done: false }]);
 
     getAllTodo(
-      "http://localhost:8000/api/todo/",
+      "http://193.168.48.199/api/todo/",
       "POST",
       JSON.stringify({ text, is_done: false })
     ).then(updateStatus);

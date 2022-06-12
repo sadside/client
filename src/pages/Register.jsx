@@ -30,7 +30,7 @@ const Register = () => {
   const handleSubmitForm = async (data) => {
     console.log(data);
 
-    await fetch("http://localhost:8000/api/auth/users/", {
+    await fetch("http://193.168.48.199/api/auth/users/", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -42,7 +42,7 @@ const Register = () => {
       }),
     });
 
-    fetch("http://localhost:8000/api/api-token-auth/", {
+    fetch("http://193.168.48.199/api/api-token-auth/", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
